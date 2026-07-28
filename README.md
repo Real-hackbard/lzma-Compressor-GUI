@@ -154,6 +154,7 @@ Users of LZMA Utils should move to XZ Utils. XZ Utils support the legacy .lzma f
 
 ### Features:
 LZMA Utils are based on LZMA SDK 4.32. LZMA Utils consist of several components:
+Download : https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/4.32/
 
 * gzip-like command line tools lzma, unlzma, and lzcat
 * Scripts adapted from gzip to ease viewing, grepping, and comparing uncompressed contents of .lzma files
