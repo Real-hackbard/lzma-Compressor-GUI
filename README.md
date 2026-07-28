@@ -100,6 +100,23 @@ Short options can be grouped like -cd.
 
        --best Alias to -9.
 
+DIAGNOSTICS
+       Exit status:
+       0 - Everything OK.
+       1 - An error occurred.
+       2 - Something worth a warning happened but no errors.
+
+       It  can  be  especially useful with tar(1) patched to support LZMA com-
+       pression.
+
+AUTHORS
+       The LZMA algorithm and the implementation used in LZMA utils was devel-
+       oped  by  Igor Pavlov. The original code is available in LZMA SDK which
+       can be found from http://7-zip.org/sdk.html .
+
+       lzma   command   line   tool   was   written   by    Ville    Koskinen.
+       http://tukaani.org/lzma/
+
 ```
 
 </br>
