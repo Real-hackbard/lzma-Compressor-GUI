@@ -154,7 +154,7 @@ Users of LZMA Utils should move to XZ Utils. XZ Utils support the legacy .lzma f
 
 ### Features:
 LZMA Utils are based on LZMA SDK 4.32. LZMA Utils consist of several components:  
-XZ Utils : https://tukaani.org/xz/
+XZ Utils : https://tukaani.org/xz/  
 LZMA SDK : https://7-zip.org/sdk.html
 
 ### Download
