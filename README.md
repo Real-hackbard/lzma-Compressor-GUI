@@ -140,9 +140,9 @@ There are 7 types of packets..
 
 </br>
 
-LONGREP[*] refers to LONGREP[0–3] packets, *REP refers to both LONGREP and SHORTREP, and *MATCH refers to both MATCH and *REP.
+```LONGREP[*]``` refers to ```LONGREP[0–3]``` packets, *REP refers to both ```LONGREP``` and ```SHORTREP```, and *MATCH refers to both ```MATCH``` and *REP.
 
-LONGREP[n] packets remove the distance used from the list of the most recent distances and reinsert it at the front, to avoid useless repeated entry, while MATCH just adds the distance to the front even if already present in the list and SHORTREP and LONGREP[0] don't alter the list.
+```LONGREP[n]``` packets remove the distance used from the list of the most recent distances and reinsert it at the front, to avoid useless repeated entry, while ```MATCH``` just adds the distance to the front even if already present in the list and ```SHORTREP``` and ```LONGREP[0]``` don't alter the list.
 
 </br>
 
