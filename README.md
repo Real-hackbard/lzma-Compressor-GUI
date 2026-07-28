@@ -28,6 +28,14 @@ Both streamed and non-streamed files are  compressed  identically;  the only  di
 Compress or uncompress FILE (by default, compress FILE in-place).
 
 ```txt
+       NAME
+       lzma, unlzma, lzcat - LZMA compression and decompression tool
+
+SYNOPSIS
+       lzma [-123456789cdefhkLqtvV] [-S suffix] [filenames ...]
+       unlzma [-cfhkLqtvV] [-S suffix] [filenames ...]
+       lzcat [-fhLqV] [filenames ...]
+
        Short options can be grouped like -cd.
 
        -c --stdout --to-stdout
