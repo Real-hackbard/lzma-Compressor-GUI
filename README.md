@@ -120,3 +120,30 @@ AUTHORS
 ```
 
 </br>
+
+# Compressed format overview
+In LZMA compression, the compressed stream is a stream of bits, encoded using an adaptive binary range coder. The stream is divided into packets, each packet describing either a single byte, or an LZ77 sequence with its length and distance implicitly or explicitly encoded. Each part of each packet is modelled with independent contexts, so the probability predictions for each bit are correlated with the values of that bit (and related bits from the same field) in previous packets of the same type. Both the lzip and the LZMA SDK documentation describe this stream format.
+
+There are 7 types of packets..
+
+</br>
+
+| Packed code (bit sequence) | Packet name | Packet description |
+| :-----------  | :-----------  | :-----------  |
+| 0 + byteCode     | LIT     | A single byte encoded using an adaptive binary range coder.     |
+| 1+0 + len + dist     | MATCH     | A typical LZ77 sequence describing sequence length and distance.    |
+| 1+1+0+0     | SHORTREP     | A one-byte LZ77 sequence. Distance is equal to the last used LZ77 distance     |
+| 1+1+0+1 + len     | LONGREP[0]     | An LZ77 sequence. Distance is equal to the last used LZ77 distance.     |
+| 1+1+1+0 + len     | LONGREP[1]     | An LZ77 sequence. Distance is equal to the second last used LZ77 distance.     |
+| 1+1+1+1+0 + len     | LONGREP[2]     | An LZ77 sequence. Distance is equal to the third last used LZ77 distance.     |
+| 1+1+1+1+1 + len     | LONGREP[3]     | An LZ77 sequence. Distance is equal to the fourth last used LZ77 distance.     |
+
+</br>
+
+LONGREP[*] refers to LONGREP[0–3] packets, *REP refers to both LONGREP and SHORTREP, and *MATCH refers to both MATCH and *REP.
+
+LONGREP[n] packets remove the distance used from the list of the most recent distances and reinsert it at the front, to avoid useless repeated entry, while MATCH just adds the distance to the front even if already present in the list and SHORTREP and LONGREP[0] don't alter the list.
+
+</br>
+
+
