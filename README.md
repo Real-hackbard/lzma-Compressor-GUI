@@ -160,10 +160,10 @@ LZMA SDK : https://7-zip.org/sdk.html
 ### Download
 LZMA Utils 4.32.7 was released on 2008-07-30.
 
-lzma-4.32.7.tar.gz (469 KiB)
-lzma-4.32.7.tar.bz2 (336 KiB)
-lzma-4.32.7.tar.lzma (268 KiB)
-lzma-4.32.7.tar.xz (267 KiB)
+[lzma-4.32.7.tar.gz](https://tukaani.org/lzma/lzma-4.32.7.tar.gz) (469 KiB)  
+[lzma-4.32.7.tar.bz2](https://tukaani.org/lzma/lzma-4.32.7.tar.bz2) (336 KiB)  
+[lzma-4.32.7.tar.lzma](https://tukaani.org/lzma/lzma-4.32.7.tar.lzma) (268 KiB)  
+[lzma-4.32.7.tar.xz](https://tukaani.org/lzma/lzma-4.32.7.tar.xz) (267 KiB)  
 
 Git repository: https://git.tukaani.org/lzma.git
 
