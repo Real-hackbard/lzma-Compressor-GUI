@@ -153,7 +153,7 @@ There are 7 types of packets..
 Users of LZMA Utils should move to XZ Utils. XZ Utils support the legacy .lzma format used by LZMA Utils, and can also emulate the command line tools of LZMA Utils.
 
 ### Features:
-LZMA Utils are based on LZMA SDK 4.32. LZMA Utils consist of several components:
+LZMA Utils are based on LZMA SDK 4.32. LZMA Utils consist of several components:  
 Download : https://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/4.32/
 
 * gzip-like command line tools lzma, unlzma, and lzcat
