@@ -24,6 +24,8 @@ LZMA files can be either streamed or non-streamed.  Non-streamed  files are  cre
 
 Both streamed and non-streamed files are  compressed  identically;  the only  differences  are  found from the beginnings and ends of LZMA compressed files: Non-streamed files contain the uncompressed size of  the file  in  the  LZMA  file header; streamed files have uncompressed size marked as unknown. To know where to stop decoding, streamed files  have a  special  End  Of  Stream marker at the end of the LZMA file. The EOS marker makes streamed files five or six bytes bigger than non-streamed.
 
+</br>
+
 # :wrench: Parameters:
 Compress or uncompress FILE (by default, compress FILE in-place).
 
