@@ -147,7 +147,7 @@ LONGREP[n] packets remove the distance used from the list of the most recent dis
 </br>
 
 # LZMA Utils
-LZMA Utils is legacy data compression software with high compression ratio.
+[LZMA Utils](https://tukaani.org/lzma/) is legacy data compression software with high compression ratio.
 
 Note:  
 Users of LZMA Utils should move to XZ Utils. XZ Utils support the legacy .lzma format used by LZMA Utils, and can also emulate the command line tools of LZMA Utils.
