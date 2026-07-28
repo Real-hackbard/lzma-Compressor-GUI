@@ -146,4 +146,19 @@ LONGREP[n] packets remove the distance used from the list of the most recent dis
 
 </br>
 
+# LZMA Utils
+LZMA Utils is legacy data compression software with high compression ratio.
 
+Note:  
+Users of LZMA Utils should move to XZ Utils. XZ Utils support the legacy .lzma format used by LZMA Utils, and can also emulate the command line tools of LZMA Utils.
+
+### Features:
+LZMA Utils are based on LZMA SDK 4.32. LZMA Utils consist of several components:
+
+* gzip-like command line tools lzma, unlzma, and lzcat
+* Scripts adapted from gzip to ease viewing, grepping, and comparing uncompressed contents of .lzma files
+* lzmadec, a small decompression-only command line tool
+* lzmainfo, a tool to view information about .lzma headers
+* liblzmadec, a decompression-only library with stateful multi-call API
+
+There are some benchmarks of an old version of LZMA Utils. The results of these benchmarks somewhat apply to the latest LZMA Utils too. XZ Utils tend to be significantly faster though (typically 20–30 % faster single-threaded compression at practically the same compression ratio.
