@@ -28,13 +28,13 @@ Both streamed and non-streamed files are  compressed  identically;  the only  di
 Compress or uncompress FILE (by default, compress FILE in-place).
 
 ```txt
-  -c    write on standard output, keep original files unchanged
-  -cores int
-        number of cores to use for parallelization (default 1)
-  -d    decompress; see also -c and -k
-  -f    force overwrite of output file
-  -h    print this help message
-  -k    keep original files unchaned
+  -c          write on standard output, keep original files unchanged
+  -cores int  number of CPU cores
+              number of cores to use for parallelization (default 1)
+  -d          decompress; see also -c and -k
+  -f          force overwrite of output file
+  -h          print this help message
+  -k          keep original files unchaned
   -l int
         compression level [1 ... 9] (default 5)
   -s string
