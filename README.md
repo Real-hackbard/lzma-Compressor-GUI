@@ -19,6 +19,8 @@ LZMA (Lempel–Ziv–Markov chain algorithm) is a [lossless data compression](ht
 
 </br>
 
+LZMA files can be either streamed or non-streamed.  Non-streamed  files are  created  only when the size of the file being compressed is known. In practice this means that the source file must be a regular file.  In other  words,  if  compressing  from the standard input or from a named pipe (fifo) the compressed file will always be streamed.
 
+Both streamed and non-streamed files are  compressed  identically;  the only  differences  are  found from the beginnings and ends of LZMA compressed files: Non-streamed files contain the uncompressed size of  the file  in  the  LZMA  file header; streamed files have uncompressed size marked as unknown. To know where to stop decoding, streamed files  have a  special  End  Of  Stream marker at the end of the LZMA file. The EOS marker makes streamed files five or six bytes bigger than non-streamed.
 
 
