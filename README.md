@@ -28,17 +28,68 @@ Both streamed and non-streamed files are  compressed  identically;  the only  di
 Compress or uncompress FILE (by default, compress FILE in-place).
 
 ```txt
-  -c          write on standard output, keep original files unchanged
-  -cores int  number of CPU cores
-              number of cores to use for parallelization (default 1)
-  -d          decompress; see also -c and -k
-  -f          force overwrite of output file
-  -h          print this help message
-  -k          keep original files unchaned
-  -l int
-        compression level [1 ... 9] (default 5)
-  -s string
-        use provided suffix on compressed files (default "lzma")
+       Short options can be grouped like -cd.
+
+       -c --stdout --to-stdout
+              The output is written to the standard output. The original files
+              are  kept  unchanged.  When  compressing  to the standard output
+              there can be only one input file. This option  is  implied  when
+              input  is  read from the standard input or the script is invoked
+              as lzcat.
+
+       -d --decompress --uncompress
+              Force decompression regardless of the invocation name. This  the
+              default when called as unlzma or lzcat.
+
+       -f --force
+              Force compression or decompression even if source file is a sym-
+              link, target exists, or target is a  terminal.  In  contrast  to
+              gzip  and  bzip2,  if  input data is not in LZMA format, --force
+              does not make lzma behave like cat.  lzma never prompts if  tar-
+              get  file  should be overwritten; existing files are skipped or,
+              in case of --force, overwritten.
+
+       -h --help
+              Show a summary of supported options and quit.
+
+       -k --keep
+              Do not delete the input files after  compression  or  decompres-
+              sion.
+
+       -L --license
+              Show licensing information of lzma.
+
+       -q --quiet
+              Suppress  all  warnings.  You can still check the exit status to
+              detect if a warning had been shown.
+
+       -S --suffix .suf
+              Use .suf instead of the default .lzma.  A null suffix forces un-
+              lzma  to  decompress all the given files regardless of the file-
+              name suffix.
+
+       -t --test
+              Check the integrity of the compressed file(s). Without --verbose
+              no output is produced if no errors are found.
+
+       -v --verbose
+              Show  the  filename  and  percentage reduction of each processes
+              file.
+
+       -V --version
+              Show the version number of lzma.
+
+       -z --compress
+              Force compression regardless of the invocation name.
+
+       -1 .. -9
+              Set the compression ratio. These options have no effect when de-
+              compressing.
+
+       --fast Alias to -1.
+
+       --best Alias to -9.
+
 ```
 
 </br>
