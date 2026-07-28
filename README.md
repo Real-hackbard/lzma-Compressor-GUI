@@ -11,7 +11,7 @@
 
 </br>
 
-LZMA (Lempel–Ziv–Markov chain algorithm) is a [lossless data compression](https://en.wikipedia.org/wiki/Lossless_compression) algorithm developed since 1998 by Igor Pavlov, the developer of 7-Zip. It has been used in the 7z format of the [7-Zip](https://en.wikipedia.org/wiki/7-Zip) archiver since 2001. This algorithm uses a dictionary compression scheme somewhat similar to the LZ77 algorithm published by Abraham Lempel and Jacob Ziv in 1977 and features a high compression ratio (generally higher than bzip2) and a variable compression-dictionary size (up to 4 GB), while still maintaining decompression speed similar to other commonly used compression algorithms.
+LZMA (Lempel–Ziv–Markov chain algorithm) is a [lossless data compression](https://en.wikipedia.org/wiki/Lossless_compression) algorithm developed since 1998 by Igor Pavlov, the developer of 7-Zip. It has been used in the [7z](https://en.wikipedia.org/wiki/7z) format of the [7-Zip](https://en.wikipedia.org/wiki/7-Zip) archiver since 2001. This algorithm uses a [dictionary compression](https://en.wikipedia.org/wiki/Dictionary_coder) scheme somewhat similar to the LZ77 algorithm published by Abraham Lempel and Jacob Ziv in 1977 and features a high compression ratio (generally higher than bzip2) and a variable compression-dictionary size (up to 4 GB), while still maintaining decompression speed similar to other commonly used compression algorithms.
 
 
 
